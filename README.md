@@ -64,17 +64,18 @@ The project uses synthetic DNS traffic data with the following features:
 dns-anomaly-detection/
 │
 ├── data/
-│   └── synthetic_dns_traffic.csv          # DNS traffic dataset
+│ └── synthetic_dns_traffic.csv # DNS traffic dataset
 │
 ├── results/
-│   ├── isolation_forest_results.csv       # IF predictions
-│   ├── kmeans_results.csv                 # K-Means predictions
-│   └── ocsvm_results.csv                  # OCSVM predictions
+│ ├── isolation_forest_results.csv # IF predictions
+│ ├── kmeans_results.csv # K-Means predictions
+│ └── ocsvm_results.csv # OCSVM predictions
 │
-├── DNS_Detection.py                        # Main detection script
-├── DNS_Anomaly_Detection.pptx              # Project presentation
-├── Anomaly Detection Model comparison.jpg  # Performance chart
-└── README.md                               # Documentation
+├── DNS_Detection.py # Main detection script
+├── DNS_Anomaly_Detection.pptx # Project presentation
+├── Anomaly Detection Model comparison.jpg # Performance chart
+└── README.md # Documentation
+
 ---
 
 

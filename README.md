@@ -77,9 +77,22 @@ dns-anomaly-detection/
 
 ---
 
+
+| File | Description |
+|------|-------------|
+| `synthetic_dns_traffic.csv` | Synthetic DNS traffic dataset with 6 features |
+| `isolation_forest_results.csv` | Anomaly detection results from Isolation Forest model |
+| `kmeans_results.csv` | Anomaly detection results from K-Means model |
+| `ocsvm_results.csv` | Anomaly detection results from One-Class SVM model |
+| `DNS_Detection.py` | Main Python script for running all detection models |
+| `DNS_Anomaly_Detection.pptx` | Project presentation slides |
+| `Anomaly Detection Model comparison.jpg` | Performance visualization chart |
+| `README.md` | Project documentation |
+
+---
+
 ## 🚀 Installation
 
-```bash
 # Clone the repository
 git clone https://github.com/yourusername/dns-anomaly-detection.git
 cd dns-anomaly-detection
@@ -87,19 +100,19 @@ cd dns-anomaly-detection
 # Install required packages
 pip install numpy pandas matplotlib seaborn scikit-learn imbalanced-learn
 
+
 ## 💻 Usage
 
 ### Running the Detection Pipeline
 
-```bash
 python DNS_Detection.py
 
-Expected Output:
-CSV files containing anomaly detection results for each model
+### Expected Output:
 
-Visualization comparing model performance (Precision, Recall, F1-Score)
+1. CSV files containing anomaly detection results for each model
+2. Visualization comparing model performance (Precision, Recall, F1-Score)
+3. Console output with performance metrics
 
-Console output with performance metrics
 
 ## 📈 Model Performance Comparison
 
@@ -111,11 +124,10 @@ Console output with performance metrics
 
 ### Key Findings:
 
-- **Isolation Forest** achieved the best scores but suffers from overfitting, limiting performance on unseen data
-- **K-Means** delivers consistent performance with good generalization - **RECOMMENDED FOR PRODUCTION**
-- **One-Class SVM** struggles with data complexity and is not recommended
+- Isolation Forest achieved the best scores but suffers from overfitting, limiting performance on unseen data
+- K-Means delivers consistent performance with good generalization - RECOMMENDED FOR PRODUCTION
+- One-Class SVM struggles with data complexity and is not recommended
 
----
 
 ## 📊 Visualization
 
@@ -123,7 +135,6 @@ Console output with performance metrics
 
 The comparison chart shows performance metrics across all three models, clearly demonstrating Isolation Forest's superior scores and K-Means' balanced performance.
 
----
 
 ## 🎯 Conclusion & Recommendations
 
@@ -131,11 +142,10 @@ After comprehensive testing and analysis:
 
 | Recommendation | Reason |
 |----------------|--------|
-| **K-Means Clustering** (Production) | Optimal balance of performance and generalization |
-| **Isolation Forest** (Specific use cases) | Maximum detection accuracy when overfitting can be mitigated |
-| **One-Class SVM** | Not recommended for this use case |
+| K-Means Clustering (Production) | Optimal balance of performance and generalization |
+| Isolation Forest (Specific use cases) | Maximum detection accuracy when overfitting can be mitigated |
+| One-Class SVM | Not recommended for this use case |
 
----
 
 ## 🔧 Future Improvements
 
@@ -145,7 +155,6 @@ After comprehensive testing and analysis:
 - [ ] Develop alerting system for detected anomalies
 - [ ] Expand feature set with additional DNS metrics
 
----
 
 ## 👥 Team
 
@@ -156,7 +165,6 @@ After comprehensive testing and analysis:
 | Mayssoune Hussein ElMasry | 2205251 |
 | Hanin Mohamed Hamouda | 2205232 |
 
----
 
 ## 📚 Technologies Used
 
@@ -169,13 +177,15 @@ After comprehensive testing and analysis:
 | matplotlib/seaborn | Data visualization |
 | imbalanced-learn | Handling imbalanced datasets |
 
----
+
+## 📄 License
+
+This project is licensed under the MIT License.
 
 
 ## 🙏 Acknowledgments
 
 Special thanks to our instructors for guidance on DNS security and anomaly detection methodologies.
 
----
 
 ⭐ If you find this project useful, please consider giving it a star on GitHub!
